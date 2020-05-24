@@ -1,0 +1,6 @@
+function res = x_1(t, t0, k, psi1, psi20, x10, x20)
+res = k*(t-t0) + (1/(2*k) + psi1/k^2)*(t-t0) + psi20*cosh(k*(t-t0))/k^2 -...
+psi1*sinh(k*(t-t0))/k^3 - exp(k*(t-t0))/(2*k^2) + x20.*exp(k*(t-t0))/k + ...
+1/(2*k^2) - psi20/k^2 - x20/k + x10.*exp(k*(t-t0));
+end
+
